@@ -30,13 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            btnnewmember = new Button();
+            btnsetting = new Button();
+            btnstore = new Button();
+            btnmembership = new Button();
+            btnworkoutplan = new Button();
             btndashboard = new Button();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
+            panel3 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -45,10 +47,11 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnnewmember);
+            panel1.Controls.Add(btnsetting);
+            panel1.Controls.Add(btnstore);
+            panel1.Controls.Add(btnmembership);
+            panel1.Controls.Add(btnworkoutplan);
             panel1.Controls.Add(btndashboard);
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Left;
@@ -57,80 +60,103 @@
             panel1.Size = new Size(230, 678);
             panel1.TabIndex = 0;
             // 
-            // button4
+            // btnnewmember
             // 
-            button4.Dock = DockStyle.Bottom;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseOverBackColor = Color.Red;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.Black;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.Location = new Point(0, 558);
-            button4.Name = "button4";
-            button4.Size = new Size(230, 60);
-            button4.TabIndex = 1;
-            button4.Text = "New Member";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.TextImageRelation = TextImageRelation.TextBeforeImage;
-            button4.UseVisualStyleBackColor = true;
+            btnnewmember.Dock = DockStyle.Bottom;
+            btnnewmember.FlatAppearance.BorderSize = 0;
+            btnnewmember.FlatAppearance.MouseOverBackColor = Color.Red;
+            btnnewmember.FlatStyle = FlatStyle.Flat;
+            btnnewmember.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnnewmember.ForeColor = Color.Black;
+            btnnewmember.Image = (Image)resources.GetObject("btnnewmember.Image");
+            btnnewmember.Location = new Point(0, 558);
+            btnnewmember.Name = "btnnewmember";
+            btnnewmember.Size = new Size(230, 60);
+            btnnewmember.TabIndex = 1;
+            btnnewmember.Text = "New Member";
+            btnnewmember.TextAlign = ContentAlignment.MiddleLeft;
+            btnnewmember.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnnewmember.UseVisualStyleBackColor = true;
+            btnnewmember.Click += btnnewmember_Click;
             // 
-            // button3
+            // btnsetting
             // 
-            button3.Dock = DockStyle.Bottom;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 73, 172);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.Black;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.Location = new Point(0, 618);
-            button3.Name = "button3";
-            button3.Size = new Size(230, 60);
-            button3.TabIndex = 1;
-            button3.Text = "Setting";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.TextImageRelation = TextImageRelation.TextBeforeImage;
-            button3.UseVisualStyleBackColor = true;
+            btnsetting.Dock = DockStyle.Bottom;
+            btnsetting.FlatAppearance.BorderSize = 0;
+            btnsetting.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 73, 172);
+            btnsetting.FlatStyle = FlatStyle.Flat;
+            btnsetting.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnsetting.ForeColor = Color.Black;
+            btnsetting.Image = (Image)resources.GetObject("btnsetting.Image");
+            btnsetting.Location = new Point(0, 618);
+            btnsetting.Name = "btnsetting";
+            btnsetting.Size = new Size(230, 60);
+            btnsetting.TabIndex = 1;
+            btnsetting.Text = "Setting";
+            btnsetting.TextAlign = ContentAlignment.MiddleLeft;
+            btnsetting.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnsetting.UseVisualStyleBackColor = true;
+            btnsetting.Click += btnsetting_Click;
             // 
-            // button2
+            // btnstore
             // 
-            button2.Dock = DockStyle.Top;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 73, 172);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.Black;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleRight;
-            button2.Location = new Point(0, 270);
-            button2.Name = "button2";
-            button2.Size = new Size(230, 60);
-            button2.TabIndex = 1;
-            button2.Text = "Membership";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.TextImageRelation = TextImageRelation.TextBeforeImage;
-            button2.UseVisualStyleBackColor = true;
+            btnstore.Dock = DockStyle.Top;
+            btnstore.FlatAppearance.BorderSize = 0;
+            btnstore.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 154, 46);
+            btnstore.FlatStyle = FlatStyle.Flat;
+            btnstore.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnstore.ForeColor = Color.Black;
+            btnstore.Image = (Image)resources.GetObject("btnstore.Image");
+            btnstore.ImageAlign = ContentAlignment.MiddleRight;
+            btnstore.Location = new Point(0, 330);
+            btnstore.Name = "btnstore";
+            btnstore.Size = new Size(230, 60);
+            btnstore.TabIndex = 1;
+            btnstore.Text = "Store";
+            btnstore.TextAlign = ContentAlignment.MiddleLeft;
+            btnstore.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnstore.UseVisualStyleBackColor = true;
+            btnstore.Click += btnstore_Click;
             // 
-            // button1
+            // btnmembership
             // 
-            button1.Dock = DockStyle.Top;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 73, 172);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.Black;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleRight;
-            button1.Location = new Point(0, 210);
-            button1.Name = "button1";
-            button1.Size = new Size(230, 60);
-            button1.TabIndex = 1;
-            button1.Text = "Workout Plan";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.TextImageRelation = TextImageRelation.TextBeforeImage;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += btndashboard_Click;
+            btnmembership.Dock = DockStyle.Top;
+            btnmembership.FlatAppearance.BorderSize = 0;
+            btnmembership.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 73, 172);
+            btnmembership.FlatStyle = FlatStyle.Flat;
+            btnmembership.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnmembership.ForeColor = Color.Black;
+            btnmembership.Image = (Image)resources.GetObject("btnmembership.Image");
+            btnmembership.ImageAlign = ContentAlignment.MiddleRight;
+            btnmembership.Location = new Point(0, 270);
+            btnmembership.Name = "btnmembership";
+            btnmembership.Size = new Size(230, 60);
+            btnmembership.TabIndex = 1;
+            btnmembership.Text = "Membership";
+            btnmembership.TextAlign = ContentAlignment.MiddleLeft;
+            btnmembership.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnmembership.UseVisualStyleBackColor = true;
+            btnmembership.Click += btnmembership_Click;
+            // 
+            // btnworkoutplan
+            // 
+            btnworkoutplan.Dock = DockStyle.Top;
+            btnworkoutplan.FlatAppearance.BorderSize = 0;
+            btnworkoutplan.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 73, 172);
+            btnworkoutplan.FlatStyle = FlatStyle.Flat;
+            btnworkoutplan.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnworkoutplan.ForeColor = Color.Black;
+            btnworkoutplan.Image = (Image)resources.GetObject("btnworkoutplan.Image");
+            btnworkoutplan.ImageAlign = ContentAlignment.MiddleRight;
+            btnworkoutplan.Location = new Point(0, 210);
+            btnworkoutplan.Name = "btnworkoutplan";
+            btnworkoutplan.Size = new Size(230, 60);
+            btnworkoutplan.TabIndex = 1;
+            btnworkoutplan.Text = "Workout Plan";
+            btnworkoutplan.TextAlign = ContentAlignment.MiddleRight;
+            btnworkoutplan.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnworkoutplan.UseVisualStyleBackColor = true;
+            btnworkoutplan.Click += btnworkoutplan_Click;
             // 
             // btndashboard
             // 
@@ -173,17 +199,28 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(245, 247, 255);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(230, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1051, 678);
+            panel3.TabIndex = 1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(46, 51, 73);
+            BackColor = Color.White;
             ClientSize = new Size(1281, 678);
+            Controls.Add(panel3);
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             RightToLeft = RightToLeft.Yes;
             Text = "Gym Management ";
+            TransparencyKey = Color.WhiteSmoke;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -196,9 +233,11 @@
         private Panel panel2;
         private PictureBox pictureBox1;
         private Button btndashboard;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button btnnewmember;
+        private Button btnsetting;
+        private Button btnmembership;
+        private Button btnworkoutplan;
+        private Panel panel3;
+        private Button btnstore;
     }
 }
