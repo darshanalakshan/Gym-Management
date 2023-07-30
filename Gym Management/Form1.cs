@@ -6,5 +6,10 @@ namespace Gym_Management
         {
             InitializeComponent();
         }
+
+        private void btndashboard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
