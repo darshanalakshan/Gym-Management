@@ -74,5 +74,9 @@ namespace Gym_Management
             child.Show();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

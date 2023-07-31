@@ -15,6 +15,17 @@ namespace Gym_Management.Forms
         public New_Member()
         {
             InitializeComponent();
+            this.RightToLeft = RightToLeft.No;
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void New_Member_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
