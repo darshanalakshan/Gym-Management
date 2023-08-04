@@ -149,5 +149,15 @@ namespace Gym_Management.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap steven_erixon_FxlYmu_To7o_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("steven-erixon-FxlYmu_To7o-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

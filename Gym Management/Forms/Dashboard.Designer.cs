@@ -72,31 +72,36 @@
             panel1.Controls.Add(welcome);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1319, 71);
+            panel1.Size = new Size(1284, 71);
             panel1.TabIndex = 0;
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Right;
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(1253, 16);
+            label3.Location = new Point(1147, 18);
             label3.Name = "label3";
-            label3.Size = new Size(51, 20);
+            label3.RightToLeft = RightToLeft.No;
+            label3.Size = new Size(40, 15);
             label3.TabIndex = 3;
             label3.Text = "label1";
+            label3.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Right;
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(1253, 44);
+            label2.Location = new Point(1196, 42);
             label2.Name = "label2";
-            label2.Size = new Size(51, 20);
+            label2.RightToLeft = RightToLeft.No;
+            label2.Size = new Size(40, 15);
             label2.TabIndex = 2;
             label2.Text = "label1";
+            label2.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label1
             // 
@@ -104,9 +109,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Nirmala UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.MenuText;
-            label1.Location = new Point(13, 7);
+            label1.Location = new Point(11, 14);
             label1.Name = "label1";
-            label1.Size = new Size(0, 23);
+            label1.Size = new Size(0, 19);
             label1.TabIndex = 1;
             // 
             // welcome
@@ -115,9 +120,9 @@
             welcome.AutoSize = true;
             welcome.Font = new Font("Nirmala UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             welcome.ForeColor = SystemColors.ControlText;
-            welcome.Location = new Point(6, 30);
+            welcome.Location = new Point(5, 31);
             welcome.Name = "welcome";
-            welcome.Size = new Size(193, 38);
+            welcome.Size = new Size(149, 30);
             welcome.TabIndex = 0;
             welcome.Text = "DASHBOARD";
             welcome.Click += welcome_Click;
@@ -129,9 +134,10 @@
             panel2.Controls.Add(tableLayoutPanel1);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 71);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Padding = new Padding(10);
-            panel2.Size = new Size(1319, 562);
+            panel2.Padding = new Padding(9, 8, 9, 8);
+            panel2.Size = new Size(1284, 847);
             panel2.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -141,11 +147,12 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(10, 171);
+            tableLayoutPanel2.Location = new Point(9, 129);
+            tableLayoutPanel2.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new Size(1299, 381);
+            tableLayoutPanel2.Size = new Size(1266, 710);
             tableLayoutPanel2.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -155,12 +162,13 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel3.Controls.Add(panel7, 0, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(3, 3);
+            tableLayoutPanel3.Location = new Point(3, 2);
+            tableLayoutPanel3.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 2;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 75F));
-            tableLayoutPanel3.Size = new Size(968, 375);
+            tableLayoutPanel3.Size = new Size(943, 706);
             tableLayoutPanel3.TabIndex = 0;
             // 
             // panel7
@@ -170,7 +178,7 @@
             panel7.Location = new Point(0, 0);
             panel7.Margin = new Padding(0);
             panel7.Name = "panel7";
-            panel7.Size = new Size(968, 93);
+            panel7.Size = new Size(943, 176);
             panel7.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -186,11 +194,12 @@
             tableLayoutPanel1.Controls.Add(panel4, 2, 0);
             tableLayoutPanel1.Controls.Add(panel6, 3, 0);
             tableLayoutPanel1.Dock = DockStyle.Top;
-            tableLayoutPanel1.Location = new Point(10, 10);
+            tableLayoutPanel1.Location = new Point(9, 8);
+            tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(1299, 161);
+            tableLayoutPanel1.Size = new Size(1266, 121);
             tableLayoutPanel1.TabIndex = 0;
             tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
@@ -200,9 +209,10 @@
             panel3.Controls.Add(label7);
             panel3.Controls.Add(label6);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(327, 3);
+            panel3.Location = new Point(319, 2);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(318, 155);
+            panel3.Size = new Size(310, 117);
             panel3.TabIndex = 0;
             // 
             // label7
@@ -210,9 +220,9 @@
             label7.Anchor = AnchorStyles.Right;
             label7.AutoSize = true;
             label7.Font = new Font("Nirmala UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(255, 53);
+            label7.Location = new Point(255, 40);
             label7.Name = "label7";
-            label7.Size = new Size(40, 46);
+            label7.Size = new Size(33, 37);
             label7.TabIndex = 1;
             label7.Text = "0";
             // 
@@ -221,9 +231,9 @@
             label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label6.AutoSize = true;
             label6.Font = new Font("Nirmala UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(3, 28);
+            label6.Location = new Point(3, 21);
             label6.Name = "label6";
-            label6.Size = new Size(117, 92);
+            label6.Size = new Size(94, 74);
             label6.TabIndex = 0;
             label6.Text = "Fee \r\nCount";
             // 
@@ -233,19 +243,21 @@
             panel5.Controls.Add(label5);
             panel5.Controls.Add(label4);
             panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(3, 3);
+            panel5.Location = new Point(3, 2);
+            panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(318, 155);
+            panel5.Size = new Size(310, 117);
             panel5.TabIndex = 1;
+            panel5.Paint += panel5_Paint;
             // 
             // label5
             // 
             label5.Anchor = AnchorStyles.Right;
             label5.AutoSize = true;
             label5.Font = new Font("Nirmala UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(255, 53);
+            label5.Location = new Point(255, 40);
             label5.Name = "label5";
-            label5.Size = new Size(40, 46);
+            label5.Size = new Size(33, 37);
             label5.TabIndex = 1;
             label5.Text = "0";
             // 
@@ -253,9 +265,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Nirmala UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(3, 28);
+            label4.Location = new Point(3, 21);
             label4.Name = "label4";
-            label4.Size = new Size(203, 92);
+            label4.Size = new Size(163, 74);
             label4.TabIndex = 0;
             label4.Text = "New \r\nAdmissions";
             // 
@@ -265,9 +277,10 @@
             panel4.Controls.Add(label9);
             panel4.Controls.Add(label8);
             panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(651, 3);
+            panel4.Location = new Point(635, 2);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(318, 155);
+            panel4.Size = new Size(310, 117);
             panel4.TabIndex = 2;
             // 
             // label9
@@ -275,9 +288,9 @@
             label9.Anchor = AnchorStyles.Right;
             label9.AutoSize = true;
             label9.Font = new Font("Nirmala UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(255, 53);
+            label9.Location = new Point(255, 40);
             label9.Name = "label9";
-            label9.Size = new Size(40, 46);
+            label9.Size = new Size(33, 37);
             label9.TabIndex = 1;
             label9.Text = "0";
             // 
@@ -286,9 +299,9 @@
             label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label8.AutoSize = true;
             label8.Font = new Font("Nirmala UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(3, 28);
+            label8.Location = new Point(3, 21);
             label8.Name = "label8";
-            label8.Size = new Size(194, 92);
+            label8.Size = new Size(158, 74);
             label8.TabIndex = 0;
             label8.Text = "Today \r\nTotal Users";
             // 
@@ -298,9 +311,10 @@
             panel6.Controls.Add(label11);
             panel6.Controls.Add(label10);
             panel6.Dock = DockStyle.Fill;
-            panel6.Location = new Point(975, 3);
+            panel6.Location = new Point(951, 2);
+            panel6.Margin = new Padding(3, 2, 3, 2);
             panel6.Name = "panel6";
-            panel6.Size = new Size(321, 155);
+            panel6.Size = new Size(312, 117);
             panel6.TabIndex = 3;
             // 
             // label11
@@ -308,9 +322,9 @@
             label11.Anchor = AnchorStyles.Right;
             label11.AutoSize = true;
             label11.Font = new Font("Nirmala UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(255, 53);
+            label11.Location = new Point(254, 40);
             label11.Name = "label11";
-            label11.Size = new Size(40, 46);
+            label11.Size = new Size(33, 37);
             label11.TabIndex = 1;
             label11.Text = "0";
             // 
@@ -319,9 +333,9 @@
             label10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label10.AutoSize = true;
             label10.Font = new Font("Nirmala UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(3, 28);
+            label10.Location = new Point(3, 21);
             label10.Name = "label10";
-            label10.Size = new Size(128, 92);
+            label10.Size = new Size(105, 74);
             label10.TabIndex = 0;
             label10.Text = "Active \r\nUsers";
             // 
@@ -332,11 +346,13 @@
             // 
             // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1319, 633);
+            ClientSize = new Size(1284, 918);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimizeBox = false;
             Name = "Dashboard";
             Text = "Form1";
             Load += Dashboard_Load;

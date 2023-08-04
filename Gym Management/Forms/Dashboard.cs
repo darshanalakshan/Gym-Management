@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Gym_Management.Forms
 {
     public partial class Dashboard : Form
-    {
+    {   
 
         public Dashboard()
         {
@@ -44,6 +44,11 @@ namespace Gym_Management.Forms
             label1.Text = DateTime.Now.ToString("MMMM");
             label3.Text = DateTime.Now.ToString("dddd, MMMM d, yyyy");
             label2.Text = DateTime.Now.ToString("T");
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

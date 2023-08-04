@@ -56,8 +56,9 @@
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(230, 678);
+            panel1.Size = new Size(201, 917);
             panel1.TabIndex = 0;
             // 
             // btnnewmember
@@ -69,9 +70,10 @@
             btnnewmember.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnnewmember.ForeColor = Color.Black;
             btnnewmember.Image = (Image)resources.GetObject("btnnewmember.Image");
-            btnnewmember.Location = new Point(0, 558);
+            btnnewmember.Location = new Point(0, 827);
+            btnnewmember.Margin = new Padding(3, 2, 3, 2);
             btnnewmember.Name = "btnnewmember";
-            btnnewmember.Size = new Size(230, 60);
+            btnnewmember.Size = new Size(201, 45);
             btnnewmember.TabIndex = 1;
             btnnewmember.Text = "New Member";
             btnnewmember.TextAlign = ContentAlignment.MiddleLeft;
@@ -88,9 +90,10 @@
             btnsetting.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnsetting.ForeColor = Color.Black;
             btnsetting.Image = (Image)resources.GetObject("btnsetting.Image");
-            btnsetting.Location = new Point(0, 618);
+            btnsetting.Location = new Point(0, 872);
+            btnsetting.Margin = new Padding(3, 2, 3, 2);
             btnsetting.Name = "btnsetting";
-            btnsetting.Size = new Size(230, 60);
+            btnsetting.Size = new Size(201, 45);
             btnsetting.TabIndex = 1;
             btnsetting.Text = "Setting";
             btnsetting.TextAlign = ContentAlignment.MiddleLeft;
@@ -108,9 +111,10 @@
             btnstore.ForeColor = Color.Black;
             btnstore.Image = (Image)resources.GetObject("btnstore.Image");
             btnstore.ImageAlign = ContentAlignment.MiddleRight;
-            btnstore.Location = new Point(0, 330);
+            btnstore.Location = new Point(0, 247);
+            btnstore.Margin = new Padding(3, 2, 3, 2);
             btnstore.Name = "btnstore";
-            btnstore.Size = new Size(230, 60);
+            btnstore.Size = new Size(201, 45);
             btnstore.TabIndex = 1;
             btnstore.Text = "Store";
             btnstore.TextAlign = ContentAlignment.MiddleLeft;
@@ -128,9 +132,10 @@
             btnmembership.ForeColor = Color.Black;
             btnmembership.Image = (Image)resources.GetObject("btnmembership.Image");
             btnmembership.ImageAlign = ContentAlignment.MiddleRight;
-            btnmembership.Location = new Point(0, 270);
+            btnmembership.Location = new Point(0, 202);
+            btnmembership.Margin = new Padding(3, 2, 3, 2);
             btnmembership.Name = "btnmembership";
-            btnmembership.Size = new Size(230, 60);
+            btnmembership.Size = new Size(201, 45);
             btnmembership.TabIndex = 1;
             btnmembership.Text = "Membership";
             btnmembership.TextAlign = ContentAlignment.MiddleLeft;
@@ -148,9 +153,10 @@
             btnworkoutplan.ForeColor = Color.Black;
             btnworkoutplan.Image = (Image)resources.GetObject("btnworkoutplan.Image");
             btnworkoutplan.ImageAlign = ContentAlignment.MiddleRight;
-            btnworkoutplan.Location = new Point(0, 210);
+            btnworkoutplan.Location = new Point(0, 157);
+            btnworkoutplan.Margin = new Padding(3, 2, 3, 2);
             btnworkoutplan.Name = "btnworkoutplan";
-            btnworkoutplan.Size = new Size(230, 60);
+            btnworkoutplan.Size = new Size(201, 45);
             btnworkoutplan.TabIndex = 1;
             btnworkoutplan.Text = "Workout Plan";
             btnworkoutplan.TextAlign = ContentAlignment.MiddleRight;
@@ -168,9 +174,10 @@
             btndashboard.ForeColor = Color.Black;
             btndashboard.Image = Properties.Resources.diagram;
             btndashboard.ImageAlign = ContentAlignment.MiddleRight;
-            btndashboard.Location = new Point(0, 150);
+            btndashboard.Location = new Point(0, 112);
+            btndashboard.Margin = new Padding(3, 2, 3, 2);
             btndashboard.Name = "btndashboard";
-            btndashboard.Size = new Size(230, 60);
+            btndashboard.Size = new Size(201, 45);
             btndashboard.TabIndex = 1;
             btndashboard.Text = "Dashboard";
             btndashboard.TextAlign = ContentAlignment.MiddleRight;
@@ -183,8 +190,9 @@
             panel2.Controls.Add(pictureBox1);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(230, 150);
+            panel2.Size = new Size(201, 112);
             panel2.TabIndex = 0;
             // 
             // pictureBox1
@@ -193,8 +201,9 @@
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(230, 150);
+            pictureBox1.Size = new Size(201, 112);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -203,20 +212,23 @@
             // 
             panel3.BackColor = Color.FromArgb(245, 247, 255);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(230, 0);
+            panel3.Location = new Point(201, 0);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1051, 678);
+            panel3.Size = new Size(1300, 917);
             panel3.TabIndex = 1;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1281, 678);
+            ClientSize = new Size(1501, 917);
             Controls.Add(panel3);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             RightToLeft = RightToLeft.Yes;
             Text = "Gym Management ";

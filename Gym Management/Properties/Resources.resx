@@ -121,9 +121,6 @@
   <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="athletic-man-woman-with-dumbbells" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\athletic-man-woman-with-dumbbells.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-new-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-new-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,16 +130,22 @@
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="athletic-man-woman-with-dumbbells" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\athletic-man-woman-with-dumbbells.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home-icon-silhouette" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home-icon-silhouette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="couple-training-together-gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\couple-training-together-gym.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home-icon-silhouette (Small)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home-icon-silhouette (Small).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="couple-training-together-gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\couple-training-together-gym.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="steven-erixon-FxlYmu_To7o-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\steven-erixon-FxlYmu_To7o-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

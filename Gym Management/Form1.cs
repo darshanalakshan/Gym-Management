@@ -5,6 +5,7 @@ namespace Gym_Management
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             Gym_Management.Forms.Dashboard child = new Gym_Management.Forms.Dashboard() { TopLevel = false, TopMost = true };
             child.FormBorderStyle = FormBorderStyle.None;
             panel3.Controls.Add(child);
@@ -76,7 +77,9 @@ namespace Gym_Management
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            /*this.WindowState = FormWindowState.Maximized*/
+
+            ;
         }
     }
 }
