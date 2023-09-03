@@ -37,7 +37,7 @@ namespace Gym_Management
 
         private void btnmembership_Click(object sender, EventArgs e)
         {
-            Gym_Management.Forms.Membership child = new Gym_Management.Forms.Membership() { TopLevel = false, TopMost = true };
+            Gym_Management.Forms.Membershipup child = new Gym_Management.Forms.Membershipup() { TopLevel = false, TopMost = true };
             child.FormBorderStyle = FormBorderStyle.None;
             panel3.Controls.Add(child);
             child.Dock = DockStyle.Fill;

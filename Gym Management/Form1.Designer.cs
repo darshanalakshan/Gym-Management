@@ -58,7 +58,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(201, 917);
+            panel1.Size = new Size(201, 729);
             panel1.TabIndex = 0;
             // 
             // btnnewmember
@@ -70,7 +70,7 @@
             btnnewmember.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnnewmember.ForeColor = Color.Black;
             btnnewmember.Image = (Image)resources.GetObject("btnnewmember.Image");
-            btnnewmember.Location = new Point(0, 827);
+            btnnewmember.Location = new Point(0, 639);
             btnnewmember.Margin = new Padding(3, 2, 3, 2);
             btnnewmember.Name = "btnnewmember";
             btnnewmember.Size = new Size(201, 45);
@@ -90,7 +90,7 @@
             btnsetting.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnsetting.ForeColor = Color.Black;
             btnsetting.Image = (Image)resources.GetObject("btnsetting.Image");
-            btnsetting.Location = new Point(0, 872);
+            btnsetting.Location = new Point(0, 684);
             btnsetting.Margin = new Padding(3, 2, 3, 2);
             btnsetting.Name = "btnsetting";
             btnsetting.Size = new Size(201, 45);
@@ -215,7 +215,7 @@
             panel3.Location = new Point(201, 0);
             panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1300, 917);
+            panel3.Size = new Size(1149, 729);
             panel3.TabIndex = 1;
             // 
             // Form1
@@ -223,7 +223,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1501, 917);
+            ClientSize = new Size(1350, 729);
             Controls.Add(panel3);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;

@@ -17,6 +17,7 @@ namespace Gym_Management.Forms
             errorMessagemobile.Visible = false;
             checklbl.Visible = false;
             reg.Visible = false;
+            checklbl.Visible = false;
 
         }
 
@@ -49,22 +50,45 @@ namespace Gym_Management.Forms
                 Gender = radioButton2.Text;
             }
             string Dob = DobPick.Text;
-            string Mtype = memtype.Text;
-            string Pfit = perfit.Text;
+            string weight = weightvl.Text;
+            string height = heightvl.Text;
             string Jdate = jdatepick.Text;
+            string emailad = email.Text;
 
             if (string.IsNullOrWhiteSpace(txtFname.Text) || string.IsNullOrWhiteSpace(txtLname.Text))
             {
                 errorMessagefname.Visible = true;
+                errorMessagefname.ForeColor = Color.Red;
                 errorMessagefname.Text = "*required ";
                 errorMessagelname.Visible = true;
+                errorMessagelname.ForeColor = Color.Red;
                 errorMessagelname.Text = "*required ";
+                // Set up a Windows Forms Timer to hide the error message after 2 seconds
+                System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+                timer.Interval = 1000; // 2000 milliseconds = 2 seconds
+                timer.Tick += (sender, e) =>
+                {
+                    errorMessagefname.Visible = false;
+                    errorMessagelname.Visible = false;
+                    timer.Stop(); // Stop the timer after executing the action
+                };
+                timer.Start();
                 return;
             }
             if (!Int64.TryParse(txtMno.Text, out long Mno) || txtMno.Text.Length != 10 || string.IsNullOrWhiteSpace(txtMno.Text))
             {
                 errorMessagemobile.Visible = true;
+                errorMessagemobile.ForeColor = Color.Red;
                 errorMessagemobile.Text = "Please enter a valid mobile number.";
+                // Set up a Windows Forms Timer to hide the error message after 2 seconds
+                System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+                timer.Interval = 1000; // 2000 milliseconds = 2 seconds
+                timer.Tick += (sender, e) =>
+                {
+                    errorMessagemobile.Visible = false;
+                    timer.Stop(); // Stop the timer after executing the action
+                };
+                timer.Start();
                 return;
             }
 
@@ -90,6 +114,8 @@ namespace Gym_Management.Forms
                 if (count > 0)
                 {
                     checklbl.Visible = true;
+                    reg.Visible = false;
+                    checklbl.Visible = true;
                     checklbl.Text = "User already exists.";
                     return; // Stop further execution
                 }
@@ -98,7 +124,7 @@ namespace Gym_Management.Forms
                 connection.Open();
                 OleDbCommand cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT into members(Fname,Lname,Dob,Mno,Gender,Mtype,Pfit,Jdate)values('" + Fname + "','" + Lname + "','" + Dob + "','" + Mno + "','" + Gender + "','" + Mtype + "','" + Pfit + "','" + Jdate + "')";
+                cmd.CommandText = "INSERT into members(Fname,Lname,Dob,Mno,Gender,Email,Weight,Height,Jdate)values('" + Fname + "','" + Lname + "','" + Dob + "','" + Mno + "','" + Gender + "','" + emailad + "','" + weight + "','" + height + "','" + Jdate + "')";
                 cmd.ExecuteNonQuery();
                 isRegistrationSuccessful = true;
                 connection.Close();
@@ -131,8 +157,8 @@ namespace Gym_Management.Forms
 
 
                     }
-                    showpanel.BackColor = Color.Green;
-                    showpanel.Visible = true;
+                    tableLayoutPanel2.BackColor = Color.Green;
+                    tableLayoutPanel2.Visible = true;
                     reg.Visible = true;
                     reg.Text = "Welcome " + txtFname.Text + ",\nAdmission number is NF0" + fname + ".";
                 }
@@ -146,8 +172,9 @@ namespace Gym_Management.Forms
             txtLname.ResetText();
             DobPick.Value = DateTime.Now;
             txtMno.ResetText();
-            memtype.SelectedIndex = -1;
-            perfit.SelectedIndex = -1;
+            weightvl.ResetText();
+            heightvl.ResetText();
+            email.ResetText();
             jdatepick.Value = DateTime.Now;
             showpanel.BackColor = Color.White;
             reg.Visible = false;
@@ -158,6 +185,50 @@ namespace Gym_Management.Forms
         }
 
         private void reg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void jdatepick_ValueChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void weightvl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DobPick_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click_1(object sender, EventArgs e)
         {
 
         }
